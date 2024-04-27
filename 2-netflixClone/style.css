@@ -1,0 +1,101 @@
+@font-face{
+    font-family: 'neue'; 
+    src: url('./assets/neue.ttf')
+}
+body,html{
+    font-family: 'neue';
+}
+*{
+  margin: 0; 
+  padding: 0;
+}
+a{
+    text-decoration: none;
+}
+header{
+    height: 600px; /*ICI LA HAUTEUR EN PIXELS OU EN %*/
+    background-image: url('fond-dark.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+nav{
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu-item{
+    padding: 20px;
+}
+.menu-item a {
+    background-color: #e50914;
+    font-size: 1rem;
+    border-radius: 3px;/*ajouter un arrondi aux bords*/
+    margin: 10px;
+    padding: 5px 19px;/*5px en haut et en bas et 19 à gauche et à droite*/
+    color: white;
+}
+.menu-item img{
+    width: 125px;
+}
+.menu-item a:hover {
+    background-color: #a8060e;
+    color: white;
+}
+#cta {
+  text-align: center;
+  color: white;
+  width: 75%;
+  margin: 6% auto;
+}
+#cta h2{
+    font-size: 65px;
+    padding: 20px;
+}
+#cta h3{
+    font-size: 25px;
+    font-weight: 100;
+    padding: 20px;
+}
+#cta p{
+    padding-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+/*Section tv*/
+#tv{
+    background-color: black;
+    border-top: 8px solid #222;
+    border-bottom: 8px solid #222;
+    color: white;
+    display: flex;
+}
+.tv_desc{
+    padding: 3%;
+    flex: 1;
+}
+.tv_desc img{
+    max-width: 100%;/*l'image ne dépasse pas de son contenant*/
+}
+.title_desc{
+    font-size: 3em;
+    padding-top: 5%;
+}
+.description{
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+/*media querie*/
+/*responsive design*/
+@media screen and (max-width:500px){
+    header{
+        height: 100vh;/*view height*/
+    }
+    #cta{
+        width: 95%;
+    }
+    #tv{
+        flex-direction: column;
+    } 
+}
+

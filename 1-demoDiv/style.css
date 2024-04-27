@@ -1,0 +1,41 @@
+*{
+margin: 0;
+padding: 0;
+}
+
+#premier{
+    /*background-color: red; */
+    height: 300px;
+    background-image: url(office.jpg) ;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#deuxieme{
+    background-color: green;
+    height: 300px;
+}
+#troisieme{
+    background-color: blue;
+    height: 300px;
+}
+#quatrieme{
+    background-color: yellow;
+    height: 300px;
+}
+
+.titre{
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+    line-height: 300px;
+}
+
+#premier h1{
+    color: white;
+}
+
+#deuxieme h1{
+    color: yellow;
+}
+
